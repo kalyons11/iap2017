@@ -1,4 +1,5 @@
-sie the cow has felt like her life has been rather chaotic recently and decided to look at some nice Mandelbrot Sets to calm down. Help Bessie create an N (1 <= N <= 500) by M (1 <= M <= 500) Mandelbrot Set!
+Problem 1: Chaos
+Bessie the cow has felt like her life has been rather chaotic recently and decided to look at some nice Mandelbrot Sets to calm down. Help Bessie create an N (1 <= N <= 500) by M (1 <= M <= 500) Mandelbrot Set!
 
 A Mandelbrot Set is an interesting type of fractal and you should output it as follows.
 
@@ -57,3 +58,6 @@ SAMPLE OUTPUT (stdout):
                                  ***
                                  ***
                                   *
+
+
+
