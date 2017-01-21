@@ -1,0 +1,59 @@
+sie the cow has felt like her life has been rather chaotic recently and decided to look at some nice Mandelbrot Sets to calm down. Help Bessie create an N (1 <= N <= 500) by M (1 <= M <= 500) Mandelbrot Set!
+
+A Mandelbrot Set is an interesting type of fractal and you should output it as follows.
+
+Print N characters followed by a newline character. Repeat this for M lines. We will define a pixel at (a,b) to be on the a-th column on b-th line, where (0,0) represents the top left pixel.
+
+If the pixel is in the Mandelbrot set, you should output a '*', otherwise output ' '.
+
+In order to determine if the pixel is in the Mandelbrot set, we must convert the pixel to a complex number c as follows (where j represents the imaginary component).
+
+c = ( a/N * 3.5 - 2.5) + (b/M -.5) *  2 j
+
+We can then define the following sequence.
+Z0 = 0
+Zn+1 = Zn2 + c
+
+The pixel is in the Mandelbrot set if the magnitude of Z500 is less than or equal to 2.
+
+When calculating, it is suggested that you use double precision.
+
+INPUT FORMAT:
+* Line 1: Two integers N, M.
+
+SAMPLE INPUT (stdin):
+50 30
+
+OUTPUT FORMAT:
+An N by M Mandelbrot set
+
+SAMPLE OUTPUT (stdout):
+
+
+                                  *
+                                 ***
+                                 ***
+                                  *
+                            *  *******
+                             ********** *
+                            ************
+                           **************
+                          ****************
+                          ****************
+                    ****  ****************
+                   ****** ***************
+                  ******* ***************
+        ********************************
+                  ******* ***************
+                   ****** ***************
+                    ****  ****************
+                          ****************
+                          ****************
+                           **************
+                            ************
+                             ********** *
+                            *  *******
+                                  *
+                                 ***
+                                 ***
+                                  *

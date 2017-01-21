@@ -1,0 +1,47 @@
+Lecture 2
+01/18/2017
+
+Keep using Terminal.
+
+See l02_code.c.
+
+*** Arrays do not know their length; they do not change their size.
+
+*** Functions cannot return arrays created as such…pass in the array you want to fill or modify, or wait until malloc().
+
+>>> Strings
+
+Just character arrays - char[].
+
+Null terminated: char[] s = {‘H’, ‘i’, ‘\0’}
+
+char[] s = “Hi”
+
+#include <string.h>
+
+	strcpy, strcat, strlen
+
+printf(…)
+
+	“%\n” means “put decimal/int value, then new line
+
+for (int i = 0; i < blah; i++) {}
+
+while () {}
+
+When compile, add -std=c99 if init i in for loop.
+
+switch() {} - be sure to break
+
+>>> Reading input.
+
+scanf() - Reads a formatted string from console
+
+i.e. scanf(“%d %d”, &i, &j)
+
+>>> Pointers.
+
+& - gives pointer to variable.
+* - dereferences a pointer > gets the value.
+
+(See code for actual examples.)

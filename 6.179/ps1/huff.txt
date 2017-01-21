@@ -1,0 +1,45 @@
+Problem 2: Huff Encoding
+
+Over the last few days, Ryan has received many emails containing seemingly cryptic messages of length M (1 <= M <= 100000) containing only 1’s and 0’s. He believes (incorrectly) that the emails will stop if he replies with the decoded message.
+
+He believes (correctly) that the messages are sent using Huffman Encoding.
+
+Huffman Encoding assigns binary codes (a sequence of 1’s and 0’s) to characters in the original message then generates the message by replacing characters with those binary codes.  In order to retrieve the message, you need both the encoded message and the coding scheme.  (It turns out that zip and jpegs use a modified version of this).
+
+The following is an example of an encoded message:
+111000100011011101
+
+The following is an example of a coding scheme:
+6
+O00
+R010
+K011
+ 100
+S101
+C11
+111000100011011101
+
+One way to decode this is to turn the code into a binary tree. For simplicity, we will let the left leaf be 0 and the right leaf be 1. The following tree represents the preceding coding scheme…
+
+After the tree is built, the binary text is decoded by following the zeroes and ones to each leaf and then outputting the corresponding character. It is guaranteed that each path is unique (i.e. no character's code is a prefix of any other character's code). 
+
+INPUT FORMAT:
+* Line 1: The integer N.
+* Line 2 to N+1:  A single character followed by a series of 1’s and 0’s representing part of the code
+* Line N+2: The message to decode
+
+SAMPLE INPUT (stdin):
+6
+O00
+R010
+K011
+ 100
+S101
+C11
+111000100011011101
+
+OUTPUT FORMAT:
+* Line 1: The decoded message
+
+SAMPLE OUTPUT (stdout):
+C ROCKS
