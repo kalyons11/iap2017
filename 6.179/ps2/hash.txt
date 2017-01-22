@@ -1,0 +1,56 @@
+Problem 2: H4$H Browns
+Bessie the cow really likes potatoes, so she always gets hash browns for breakfast. 
+Unfortunately, Farmer John has had a particularly bad year with potatoes, and can no longer 
+supply Bessie with potatoes for her hash browns. Remembering that she is a student at the Moo 
+Institute of Tractorology, Bessie signs into one of her many *free* Amazing Student accounts 
+(an online marketplace) to buy potatoes from elsewhere.
+
+So far at school, Bessie has made N (1 <= N <= 1000) accounts (all *free*), and since there is 
+a limit on how many potatoes can be bought per account, she would like to use all of her 
+accounts to maximize the number of potatoes (and thus, hash browns) that she can acquire.
+
+At checkout, Bessie realizes that she needs to re-enter her credit card information for that 
+account in order to confirm her identity. Unfortunately, Bessie has M (1 <= M <= 1000) 
+different credit cards, and each of her Amazing Student accounts is linked to exactly one. 
+What's worse, Amazing Student has hashed her credit card number, and Bessie doesn't know
+which card each account corresponds with!
+
+Luckily for her, Bessie learns on HeapUnderflow (a forum) that the hash is performed by taking 
+each of D digits (5 <= D <= 20), adding the fourth power of the index and the fourth power of 
+D - index, multiplying that by D2, then doing an integer divide by (D - 3)2 to obtain a 
+sequence of D integers.
+
+Mathematically, the "hash" for a digit d, for some length D, at an index k, is
+
+(d + k4 + (D - k)4) * D2 / (D - 3)2
+
+Given the poorly-hashed credit card numbers, please help Bessie determine which credit card 
+number corresponds to which account, so that she can buy herself some 'taters!
+
+INPUT FORMAT:
+* Line 1: Three integers, N, M, and D.
+* Line 2..M+1: D digits, corresponding to one of Bessie's credit card numbers. This is guaranteed to be unique.
+* Line M+2..N+M+3: D space-separated integers, representing the hashes of Bessie's credit card numbers.
+
+SAMPLE INPUT (stdin):
+3 4 5
+54100
+15012
+20162
+32123
+3937 1631 612 606 1606
+3925 1618 612 618 1625
+3937 1631 612 606 1606
+
+OUTPUT FORMAT:
+N lines of output. Line i contains the credit card number for the hash given on line i+M+1.
+
+SAMPLE OUTPUT (stdout):
+54100
+32123
+54100
+
+EXPLANATION:
+
+To hash 54100, for example, we start with the 5, which is at index 0. Thus, its hashed value 
+is int((5 + 04 + (5 - 0)4) * 52 / (5 - 3)2)= 3937. Other numbers are computed similarly.

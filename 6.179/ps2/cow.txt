@@ -1,0 +1,64 @@
+Problem 1: Spherical Cows
+In the not-too-distant future, spherical shapes have become the "in" look for cows. Not only 
+does this minimize the surface area of the cow (to help it preserve heat), it also makes them 
+much more raceable.
+
+Farmer Jane has challenged Farmer John to a spherical cow race, and after many moo-ns of 
+planning, the race is underway!
+
+Bessie the cow acquired a radial injury the week before the race, so she cannot compete, but 
+since it's mating season, she would still like to know which bull in the bull's races is the 
+fastest. Since there are a lot of competitors, each bull only races once, so Bessie needs to 
+make sure that she misses nothing. Fortunately, Bessie did her research prior to the race.
+
+The innermost lane of the racetrack is 10 * M (1 <= M <= 1000000) lengths of hay long, with 
+the next-innermost lane being 10% longer, the next one after that 20%, and so on. There are L 
+(2 <= L <= 1000) lanes on the track, so the longest lane length is M * (10 + (L - 1)).
+
+Each race has B (1 <= B <= L) bulls, each uniquely labeled by a positive integer K (1 <= K <= 
+1010), and R (1 <= R <= 8) laps. For each bull, Bessie has noted that bull's time for each lap in 
+milliseconds (her stopwatch only goes as high as 109), as well as which lane that 
+bull is in. It turns out, these bulls are really fast!
+
+Bessie defines the "speed" of a bull by (total distance) / (total time), and she would like to 
+know which bull has the highest speed.
+
+Given N (1 <= N <= 1000) races, such that N * L <= 10000, please help Bessie find the fastest, 
+fittest bull! If two bulls are as fast as each other, choose the one that competed last -- he 
+has a bigger impression on Bessie!
+
+Since we are comparing floating points, consider two doubles equal if their absolute 
+difference is no greater than 10-6.
+
+INPUT FORMAT:
+* Line 1: Three integers, N, M, and L.
+* Line 2: For the first race, two integers, B and R.
+* Line 3..B+2: K, followed by R integers. K is the label for the current bull. The first bull in a race is in the innermost lane, each succeeding bull is in the next lane.
+* Line B+3: For the second race, two integers, B and R.
+...
+
+SAMPLE INPUT (stdin):
+2 100 3
+2 2
+1 900 1100
+2 800 1100
+3 3
+3 700 600 1200
+4 900 900 900
+5 850 850 900
+
+OUTPUT FORMAT:
+A single integer, the label of the bull with the greatest speed.
+
+SAMPLE OUTPUT (stdout):
+5
+
+OUTPUT EXPLANATION:
+
+Bull 1 rolled 2000 lengths of hay in a total of 2000 milliseconds, for a speed of 1.000000 lengths per millisecond.
+Bull 2 rolled 2200 lengths of hay in a total of 1900 milliseconds, for a speed of 1.157894 lengths per millisecond.
+Bull 3 rolled 3000 lengths of hay in a total of 2500 milliseconds, for a speed of 1.200000 lengths per millisecond.
+Bull 4 rolled 3300 lengths of hay in a total of 2700 milliseconds, for a speed of 1.222222 lengths per millisecond.
+Bull 5 rolled 3600 lengths of hay in a total of 2600 milliseconds, for a speed of 1.384615 lengths per millisecond.
+
+Bull 5 has the highest speed, so we output 5.
