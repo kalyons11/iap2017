@@ -17,3 +17,7 @@
 *.pyc
 *.DS_Store
 *.csv
+
+# Ignore __pycache__
+
+__pycache__
