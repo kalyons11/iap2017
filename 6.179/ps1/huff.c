@@ -10,15 +10,15 @@ typedef struct Node {
 int main() {
 
 	int max_size = 100000;
+	int max_size_length = 6;
 
-	/**/
+	char number[max_size_length];
 
-	int N;
+	fgets(number, max_size_length, stdin);
 
-	scanf("%d", &N);
+	int N = atoi(number);
 
 	Node * root = malloc(sizeof(Node));
-	root->value = NULL;
 
 	Node *tmp;
 
@@ -27,18 +27,10 @@ int main() {
 		tmp = root;
 
 		char * input = malloc(sizeof(char) * max_size);
-		scanf("%s", input);
-		int j;
 
-		// Dealing with scanf not including leading whitespace.
+		fgets(input, max_size, stdin);
 
-		if (input[0] == '0' || input[0] == '1') {
-			j = 0;
-		}
-		else {
-			j = 1;
-		}
-		for (; j < max_size; j++) {
+		for (int j = 1; j < max_size; j++) {
 			char binary = input[j];
 			if (binary == '0') {
 				Node *left = malloc(sizeof(Node));
@@ -57,17 +49,7 @@ int main() {
 					tmp = tmp->right;
 				}
 			} else {
-				if (input[0] == '0' || input[0] == '1') {
-					//letter = " ";
-					tmp->value = " ";
-					//j = 0;
-				}
-				else {
-					//letter = &input[0];
-					tmp->value = &input[0];
-					j = 1;
-				}
-				//printf("Address of this value = %p.\n", tmp->value);
+				tmp->value = &input[0];
 				break;
 			}
 			//printf("Current address of our tmp node = %p.\n", tmp);
@@ -82,9 +64,7 @@ int main() {
 
 	int letters = 0;
 
-	scanf("%s", message);
-
-	// Traverse the tree
+	fgets(message, max_size, stdin);
 
 	tmp = root;
 
@@ -123,31 +103,11 @@ int main() {
 		}
 	}
 
-	//printf("%s\n", message);
-
-	/**/
-
-	/*
-
-	int N = 6;
-
-	char letters[] = {'O', 'R', 'K', ' ', 'S', 'C'};
-	char * codes[] = {"00", "010", "011", "100", "101", "11"};
-	char message[] = "111000100011011101";
-
-	*/
-
-	// Now, let's iterate through message and determine the correct output.
-
-	/**/
-
 	for (int i = 0; i < letters; i++) {
 		printf("%c", *result[i]);
 	}
 
 	printf("\n");
-
-	/**/
 
 	return 0;
 

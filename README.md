@@ -20,5 +20,5 @@ In looking for a greater understanding of machine learning early in my career, I
 - Neural nets
 I am also taking this class as a precursor to MIT's [6.036](https://courses.csail.mit.edu/6.036/) that I will be taking Spring 2017. More to come soon.
 
-### 6.057 Introduction to MATLAB.
+### 6.057: Introduction to MATLAB.
 This class begins on Monday, January 30th. More to come soon.
