@@ -22,7 +22,7 @@ sequence of D integers.
 
 Mathematically, the "hash" for a digit d, for some length D, at an index k, is
 
-(d + k4 + (D - k)4) * D2 / (D - 3)2
+(d + k4 + (D - k)4) * D2 / (D - 3)2 
 
 Given the poorly-hashed credit card numbers, please help Bessie determine which credit card 
 number corresponds to which account, so that she can buy herself some 'taters!
