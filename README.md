@@ -7,6 +7,8 @@ This course covers a broad scope of topics in the fundamental languages of C and
 - Computer architecture
 - Pointer arithmetic
 - Structure development
+- Early OOP with C++
+- Compilation/assembly
 
 In addition, I have been able to complete many interesting topics/algorithms, including Mandlebrot fractals and Huffman encoding of binary sequences. More to come soon.
 
