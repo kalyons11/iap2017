@@ -10,7 +10,7 @@ This course covers a broad scope of topics in the fundamental languages of C and
 
 In addition, I have been able to complete many interesting topics/algorithms, including Mandlebrot fractals and Huffman encoding of binary sequences. More to come soon.
 
-### [6.S097: 6.S097 Urban Data Analytics and Machine Learning.](http://web.mit.edu/6.S097/www/)
+### [6.S097: Urban Data Analytics and Machine Learning.](http://web.mit.edu/6.S097/www/)
 In looking for a greater understanding of machine learning early in my career, I decided to take this course to be exposed in a practical way. We cover many key concepts in ML, inclduing:
 - Classification and regression
 - Training and test error
