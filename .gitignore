@@ -21,3 +21,7 @@
 # Ignore __pycache__
 
 __pycache__
+
+# Ignore 6.s097-project, as this is a separate repo.
+
+6.s097-project
