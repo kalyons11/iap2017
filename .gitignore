@@ -17,11 +17,14 @@
 *.pyc
 *.DS_Store
 *.csv
-*.xls
 
 # Ignore __pycache__
 
 __pycache__
+
+# Ignore specific folder
+
+collision_data
 
 # Ignore 6.s097-project, as this is a separate repo.
 
