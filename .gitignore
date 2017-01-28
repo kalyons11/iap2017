@@ -26,6 +26,7 @@ __pycache__
 
 collision_data
 
-# Ignore 6.s097-project, as this is a separate repo.
+# Ignore projects, as these are separate repos.
 
 6.s097-project
+6.179-project
