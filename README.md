@@ -9,10 +9,11 @@ This course covers a broad scope of topics in the fundamental languages of C and
 - Structure development
 - Early OOP with C++
 - Compilation/assembly
+- Graphics
 
 In addition, I have been able to complete many interesting topics/algorithms, including Mandlebrot fractals and Huffman encoding of binary sequences and some hashing work.
 
-This class also includes a final project. More to come soon.
+This class also includes a final project, which can be found [here](https://github.com/kalyons11/6.179-project).
 
 ### [6.S097: Urban Data Analytics and Machine Learning.](http://web.mit.edu/6.S097/www/)
 In looking for a greater understanding of machine learning early in my career, I decided to take this course to be exposed in a practical way. We cover many key concepts in ML, inclduing:
@@ -33,6 +34,3 @@ We use mostly Python in this class, specifically the [Keras](https://keras.io/),
 I am also taking this class as a precursor to MIT's [6.036](https://courses.csail.mit.edu/6.036/) that I will be taking Spring 2017. More to come soon.
 
 This class also includes a final project, which can be found [here](https://github.com/kalyons11/6.s097-project).
-
-### 6.057: Introduction to MATLAB.
-This class begins on Monday, January 30th. More to come soon.
